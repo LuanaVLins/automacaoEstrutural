@@ -21,7 +21,7 @@ public class CalculadoraIMC {
 
     public static String getStatusIMC(double imc) {
 
-        if (imc <= 18.5) {
+        if (imc <= 18.5 && imc > 0) {
             return "Abaixo do Peso";
         } else if (imc > 18.5 && imc < 25) {
             return "Peso Normal";
@@ -31,8 +31,10 @@ public class CalculadoraIMC {
             return "Obesidade Grau 1";
         } else if (imc >= 35 && imc < 40) {
             return "Obesidade Grau 2";
-        }else {
+        }else if (imc >= 40) {
             return "Obesidade Grau 3";
+        } else {
+            return "Numero invalido";
         }
     }
 }

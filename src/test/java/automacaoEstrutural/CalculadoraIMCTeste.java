@@ -54,4 +54,11 @@ public class CalculadoraIMCTeste {
         String status = "Obesidade Grau 3";
         Assertions.assertEquals(status, retorno);
     }
+
+    @Test
+    void IMCInvalido () {
+        String retorno = CalculadoraIMC.getStatusIMC(-1);
+        String status = "Numero invalido";
+        Assertions.assertEquals(status, retorno);
+    }
 }
