@@ -16,7 +16,7 @@ public class CalculadoraIMC {
     }
 
     public static double calcularIMC(double peso, double altura) {
-        return Math.round(peso / (altura * altura)) ;
+        return (peso / (altura * altura)) ;
     }
 
     public static String getStatusIMC(double imc) {

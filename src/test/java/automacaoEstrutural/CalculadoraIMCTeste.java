@@ -10,7 +10,7 @@ public class CalculadoraIMCTeste {
     @Test
     void calcularIMC() {
         double resultado = CalculadoraIMC.calcularIMC(90.0,1.70);
-        Assertions.assertEquals(31, resultado);
+        Assertions.assertEquals(31.14186851211073, resultado);
     }
 
     @Test
